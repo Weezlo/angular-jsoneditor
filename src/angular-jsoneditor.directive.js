@@ -58,6 +58,7 @@ export default () => {
             }, true);
 
             $scope.$on('$destroy', () => {
+                editor.destroy();
                 editor = null;
             });
 
